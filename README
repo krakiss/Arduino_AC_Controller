@@ -1,0 +1,9 @@
+Welcome to the Arduino_AC_Controller wiki!
+
+This is a small project to control the AC remotely using Alexa and no additional hub. It's started as a simple way to switch on and off a couple of times the AC over-n9ght as I didn't want to have the AC running all night, but neither off it and "suffer" after a few hours the change in temperature. After adding the IR modules I have installed a temperature and humidity sensor in order to monitor the environment and finally I have added a web interface to see the historic usage (limited to 24 hours).
+
+I have initially used the fauxmo library, but I had some issues and I rewrote the part to use Espalexa instead. The code reflect this continuous change and the unpanned expansion of the code. My latest version includes even one RF module and a reply from Google home (but I have some memory overflow issues).
+
+For the hardware, the full installation require a ESP8266,a resistor, one IR module and a sensor (I have used first one AM2320 and after a HTU21D as in Singapore the first one saturate on humidity after a short while. both anyway are using I2C).
+
+The bare minimum installation,anyway, required only D1mini and a IR module.
